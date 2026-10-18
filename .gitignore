@@ -1,0 +1,13 @@
+.local/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+/data/
+/artifacts/
+!experiments/runs/evidence/
+.venv/
+dashboard/build/
+logs/
+runs/

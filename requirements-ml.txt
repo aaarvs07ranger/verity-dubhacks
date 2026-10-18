@@ -1,0 +1,11 @@
+# Training and evaluation on a CUDA GPU (Python 3.11/3.12). Includes the local requirements.
+-r requirements.txt
+# The stack chess_game v3 trained with on Hyak. Tools environments need transformers >= 5.2 (TRL's environment_factory).
+torch==2.8.0
+transformers==5.20.1
+trl==1.16.0
+peft==0.21.2
+accelerate==1.15.0
+datasets==5.1.0
+# With vLLM generation (train.py --vllm, evaluate.py --backend vllm), scripts/pod.sh installs instead:
+# vllm==0.31.0 trl==1.16.0 peft==0.21.1 datasets==5.0.1 transformers==5.17.0 (vLLM 0.31 needs transformers < 5.18)
